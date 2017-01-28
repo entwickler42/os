@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Building Bootloader..."
+nasm -f bin -o boot boot.asm
+
+echo "Building Kernel..."
+nasm -f bin -o kernel kernel.asm
+
+cat boot kernel > os.img

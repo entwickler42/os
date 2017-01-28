@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Building Boot Floppy..."
+dd if=os.img of=/dev/fd0
